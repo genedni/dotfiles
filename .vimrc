@@ -26,7 +26,7 @@ Plugin 'google/yapf'
 Plugin 'timothycrosley/isort'
 
 " Auto Completion
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " Status bar plugin
 Plugin 'itchyny/lightline.vim'
@@ -42,6 +42,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 
 " Table mode
 Plugin 'dhruvasagar/vim-table-mode'
+
+Plugin 'esamattis/slimux'
 
 " All of your Plugins much be added before
 call vundle#end()            " required
@@ -77,3 +79,11 @@ let b:ale_fixers = [
 			\]
 nnoremap <buffer><silent><LocalLeader>= :ALEFix<CR>
 " let g:ale_fix_on_save = 1
+
+" Slimux config
+map <Leader>s :SlimuxREPLSendLine<CR>
+vmap <Leader>s :SlimuxREPLSendSelection<CR>
+map <Leader>b :SlimuxREPLSendBuffer<CR>
+map <Leader>a :SlimuxShellLast<CR>
+map <Leader>k :SlimuxSendKeysLast<CR>
+
